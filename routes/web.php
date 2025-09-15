@@ -13,7 +13,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', [MainController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/cryptos', [CryptoController::class, 'index']);
+Route::get('/cryptos', [CryptoController::class, 'index'])->name('cryptos.data');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
