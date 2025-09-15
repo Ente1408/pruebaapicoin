@@ -9,10 +9,10 @@ Siempre estoy abierto a nuevos retos y oportunidades para seguir aprendiendo y m
 🔹 1. Requisitos Funcionales (RF)
 
 Autenticación de usuarios: El sistema debe permitir registro, login y seguridad básica para que cada inversor tenga su propio acceso.
-Selección de criptomonedas: El usuario podrá elegir qué monedas seguir (ej: BTC, ETH, SOL).
+El usuario podrá visuzizar las siguiente monedas virtuales BTC, ETH, SOL.
 Visualización en dashboard:
     Mostrar nombre, símbolo, precio actual (USD), variación porcentual 24h y volumen 24h.
-    Mostrar un gráfico con evolución de precios.
+    Mostrar un gráfico con comparativo de precios.
 Actualización automática: Refrescar los datos en intervalos definidos (ej: cada 5 min) sin recargar toda la página.
 Responsividad: La interfaz debe adaptarse a diferentes dispositivos (móvil, tablet, desktop).
 
