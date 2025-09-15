@@ -28,3 +28,61 @@ Eficiencia:
     Uso de jobs programados y caché para optimizar rendimiento.
 Portabilidad: Ser accesible desde navegadores modernos sin necesidad de instalar software adicional.
 Usabilidad: Interfaz clara y de fácil interpretación para los inversores.
+
+
+## 📌 Requisitos
+Asegúrate de tener instalado:  
+- [PHP ^8.1](https://www.php.net/downloads)  
+- [Composer](https://getcomposer.org/)  
+- [Node.js & NPM](https://nodejs.org/)  
+- [MySQL/MariaDB](https://www.mysql.com/)  
+- Clave gratuita de [CoinMarketCap API](https://coinmarketcap.com/api/)  
+
+---
+
+## 🔧 Instalación paso a paso
+
+### 1. Clonar el repositorio
+###En una terminal agregar la siguiente informacion
+```bash
+
+git clone https://github.com/Ente1408/pruebaapicoin.git
+cd pruebaapicoin
+
+##siguiente paso instalar las dependencias
+
+composer install
+npm install
+
+###Configurar entorno
+
+##Copiar el archivo de entorno:
+cp .env.example .env
+
+
+##Generar la clave de la aplicación:
+
+php artisan key:generate
+
+##Configurar la base de datos en .env:
+
+DB_DATABASE=crypto_dashboard
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+##Agregar tu API Key de CoinMarketCap en .env:
+CMC_API_KEY=tu_api_key_aqui
+
+##4. Migraciones
+php artisan migrate
+
+##En dos terminales diferentes:
+
+##Servidor de Laravel:
+
+php artisan serve
+
+##Compilador de assets con Vite:
+
+npm run dev
