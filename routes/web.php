@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\CryptoController;
 
 
 Route::get('/', function () {
@@ -11,6 +12,8 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [MainController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/cryptos', [CryptoController::class, 'index']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
