@@ -77,6 +77,9 @@ CMC_API_KEY=tu_api_key_aqui
 ##4. Migraciones
 php artisan migrate
 
+## Seeders
+php artisan db:seed
+
 ##En dos terminales diferentes:
 
 ##Servidor de Laravel:
